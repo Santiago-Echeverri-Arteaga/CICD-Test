@@ -1,4 +1,4 @@
-# Simple Serverless FastApi Example
+# Simple Serverless FastAPI Example
 
 
 A simple serverless [FastAPI](https://fastapi.tiangolo.com/) application using [Mangum](https://pypi.org/project/mangum/) to run on an AWS [Lambda](https://aws.amazon.com/lambda/).
