@@ -5,11 +5,13 @@ from mangum import Mangum
 
 app = FastAPI()
 
+app.include_router(api_router, prefix="/api/v1")
+handler = Mangum(app)
+
 
 @app.get("/")
 async def root():
     return {"message": "Hello World!"}
 
 
-app.include_router(api_router, prefix="/api/v1")
-handler = Mangum(app, spec_version=2)
+
