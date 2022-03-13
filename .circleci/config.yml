@@ -19,6 +19,9 @@ jobs:
       - run:
           name: Install Dependencies
           command: pip install -r requirements.txt
+      - run:
+          name: Test
+          command: pytest
       
   
   deploy-dev: 
@@ -45,4 +48,4 @@ workflows:
           filters:            
             branches:
               only:
-                - cicd-test-1
+                - cicd-demo-dev
